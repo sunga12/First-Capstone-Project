@@ -140,6 +140,11 @@ To run tests, run the following command:
   npx hint .
 
   npx stylelint "**/*.{css,scss}"
+
+
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+  npx eslint .
 ```
 
 ### Deployment
