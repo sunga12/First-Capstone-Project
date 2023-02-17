@@ -850,7 +850,6 @@
   }
 
   #speakers {
-    /* border: 3px solid salmon; */
     width: 80%;
     margin: auto;
     padding-bottom: 5%;
@@ -863,13 +862,11 @@
   }
 
   .teachers {
-    /* border: 5px solid blueviolet; */
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .teacher {
-    /* border: 2px solid blue; */
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: 0.25fr 0.25fr 0.05fr 3fr;
@@ -879,7 +876,6 @@
   }
 
   .teacher-img-div {
-    /* border: 2px solid green; */
     grid-row: span 4;
     position: relative;
   }
@@ -902,14 +898,12 @@
   }
 
   .teacher-name {
-    /* border: 2px solid green; */
     width: 90%;
     font-size: 1rem;
     font-weight: 800;
   }
 
   .teacher-prof {
-    /* border: 2px solid green; */
     color: #ff4f38;
     width: 90%;
     font-style: italic;
