@@ -177,16 +177,21 @@ color: #ef513c;
   background-color: #f7f7f8;
   padding: 3rem 0 4rem;
   margin-top: 1rem;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
 }
 
 .timetable {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 2rem;
   margin-bottom: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   z-index: 2;
   padding: 1rem 0;
+}
+
+.location {
+  font-size: 1.5rem;
 }
 
 .circle {
@@ -194,12 +199,12 @@ color: #ef513c;
   border-radius: 60%;
   position: absolute;
   right: 20px;
-  top: 390px;
+  top: 150px;
   z-index: 3;
 }
 
 #features {
-  background-color: rgb(29, 28, 28);
+  background-color: #272a31;
   /* font-family: "Nanum Gothic"; */
   display: flex;
   flex-direction: column;
@@ -213,7 +218,7 @@ color: #ef513c;
 .school-features {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 
@@ -233,15 +238,17 @@ color: #ef513c;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
   font-size: 0.5rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 3%;
+  padding: 2%;
   background: rgba(255, 255, 255, 0.1);
 }
 
 .feature-icon {
-  width: 50px;
+  width: 15%;
 }
 
 .feature-icon img {
@@ -250,16 +257,26 @@ color: #ef513c;
 
 .feature-item {
   color: #ef513c;
-  width: 50px;
+  width: 20%;
+  font-size: 1.2rem;
 }
 
 .feature-desc {
   /* margin: auto; */
+  width: 50%;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 .view-school-values {
-  align-self: flex-end;
-  padding: 2rem 0;
+  align-self: center;
+  padding: 2rem;
+  margin: 4rem;
+  width: 70%;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #ec5242;
+  border: none;
 }
 
 #speakers {
@@ -277,13 +294,16 @@ padding: 2rem 0;
 .teachers {
   /* border: 5px solid blueviolet; */
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .teacher {
   /* border: 2px solid blue; */
   display: grid;
   grid-template-columns: 30% 65%;
-  grid-template-rows: 0.25fr 0.25fr 3fr;
+  grid-template-rows: 0.25fr 0.25fr 0.1fr 3fr;
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
   margin: 5%;
@@ -292,7 +312,7 @@ padding: 2rem 0;
 
 .teacher-img-div {
   /* border: 2px solid green; */
-  grid-row: span 3;
+  grid-row: span 4;
   position: relative;
 
 }
@@ -315,12 +335,23 @@ padding: 2rem 0;
 
 .teacher-name {
   /* border: 2px solid green; */
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .teacher-prof {
   /* border: 2px solid green; */
   color: #ff4f38;
+  font-style: italic;
 }
+
+.teacher-line {
+  width: 20px;
+  height: 0px;
+  border: 1px solid rgba(162, 161, 161, 0.603);
+  vertical-align: center;
+ }
 
 .teacher-desc {
   /* border: 2px solid green; */
@@ -328,8 +359,16 @@ padding: 2rem 0;
   /* margin: 0 5%; */
 }
 
-.more-speakers {
-  text-align: end;
+.more-teachers {
+  /* text-align: center; */
+ margin: auto;
+ width: 90%;
+ padding: 3%;
+ font-size: 1rem;
+ margin-bottom: 4rem;
+ background-color: #fff;
+ border: 2px solid #d3d3d3;
+ border-radius: 4px;
 }
 
 footer {
@@ -341,7 +380,8 @@ footer {
 .about {
 background-color:  #f7f7f8;
 text-align: center;
-
+padding-top: 5%;
+position: relative;
 }
 
 .about-royal {
@@ -353,7 +393,7 @@ padding: 1rem;
 
 .dotted-line {
 
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   gap: 5px;
@@ -367,7 +407,6 @@ padding: 1rem;
 .small-note {
   font-size: 0.7rem;
   margin: 2rem auto;
-  border-bottom: 1px solid black;
   width: 90%;
   padding-bottom: 3rem;
 }
@@ -376,14 +415,27 @@ padding: 1rem;
   background-color: #fff;
 }
 
-.logo-img {
-  height: 10rem;
-  border: 1px solid rgba(128, 128, 128, 0.093);
+.desk-only {
+  display: none;
 }
 
-.royal-logo-desc-2 {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.403);
+.royal-logo-title {
+  font-size: 2rem;
+  font-weight: 100;
+  padding-top: 2rem;
+  }
+
+.logo-img {
+  height: 10rem;
+  border: 1px solid rgba(128, 128, 128, 0.27);
+  margin-bottom: 2rem;
+}
+
+.royal-logo-desc {
+width: 90%;
+margin: auto;
+font-size: 0.8rem;
+padding-bottom: 1rem;
 }
 
 .past-img {
@@ -393,6 +445,13 @@ padding: 1rem;
   flex-direction: column;
   gap: 0.5rem;
   margin: 3rem auto 7rem;
+}
+
+.past-term-highlights {
+  padding-top: 2rem;
+  background-color: #fff;
+  border-top: 1px solid #d3d3d3;
+  padding-bottom: 2rem;
 }
 
 .highlight-img {
@@ -421,9 +480,8 @@ padding: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(229, 91, 49, 0.862);
+  background-color: #ec5342d6;
   background-blend-mode: multiply;
-
 }
 
 .highlight:hover {
@@ -432,34 +490,63 @@ padding: 1rem;
 
 
 #partners {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.319);
+  background-color: rgb(61, 61, 61);
+  filter: grayscale(100%);
+ }
+
+ #about-partners {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid rgba(128, 128, 128, 0.319);
-
+  background-color: rgb(61, 61, 61);
+  filter: grayscale(100%);
  }
 
 
  .partners {
-  width: 20%;
+  width: 100%;
+  filter: grayscale(100%);
+  filter: invert(76%);
+  grid-column: span 2;
  }
 
- .partners-title {
 
- }
+ .school-values-title {
+  align-self: center;
+  font-size: 1.7rem;
+  padding: 2rem 0 0 0;
+}
+.partners-title {
+  color: rgba(128, 128, 128, 0.968);
+}
  
  .partners-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding:  0 10% 5%;
   border-bottom: 1px solid rgba(128, 128, 128, 0.319);
   gap: 2rem;
+}
+
+.kakao {
+  grid-column: 2/span 2;
 
 }
 
+.airbnb {
+  grid-column: span 2;
+}
+
 #footer {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   color: #FFF;
@@ -471,6 +558,30 @@ padding: 1rem;
   color:#ff4f38;
   text-decoration: none;
 }
+
+#about-footer {
+  background-color: #fff;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  line-height: 1.6;
+  width: 80%;
+  padding-top: 3rem;
+  margin: auto;
+  font-size: 0.7rem;
+}
+
+.cc-icon1 {
+  width: 50%;
+  height: 20%;
+  filter: invert(100%);
+}
+
 
 } @media (min-width: 769px){
 
@@ -524,9 +635,13 @@ padding: 1rem;
    display: flex;
    flex-direction: row;
    height: 80px;
+   justify-content: space-evenly;
+   /* margin: 0 1rem; */
    align-items: center;
    width: 100%;
-   box-shadow: 0px 2px 4px red;
+   /* box-shadow: 0px 2px 4px red; */
+   /* border: 2px solid red; */
+
 
  }
  
@@ -553,7 +668,7 @@ display: none;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   
  }
 
@@ -567,20 +682,16 @@ display: none;
  }
 
  .presentation a {
-  background-color: #ef513c;
+  border: 5px solid #ec5242;
   padding: 15px;
   text-decoration: none;
-  color: #FFF;
- }
-
- .presentation a:hover {
-  color: #FFF;
+  color: #ec5242;
  }
 
  #title {
    display: flex;
    flex-direction: column;
-   padding: 140px 5% 0 5%;
+   padding: 140px 5% 0 12%;
    /* margin: 0 5%; */
    background-image: url(./images/assembly-dance.jpg);
    background-color: rgba(241, 241, 241, 1);
@@ -603,7 +714,7 @@ display: none;
  
  
  .intro-text {
-   color: #ef513cb3;
+   color: #ec5242b3;
    font-size:3rem;
    z-index: 7;
    background-clip: text;
@@ -613,14 +724,12 @@ display: none;
    background-size: cover;
    background-blend-mode: multiply;
    position: relative;
-
  }
  
  .slogan {
    margin: 0;
    font-weight: 100;
    color: #ef513cb3;
- 
  }
  
  .rss {
@@ -628,6 +737,22 @@ display: none;
    font-family: "Inter", Arial, Helvetica, sans-serif;
    font-style: bold;
    font-weight: 800;
+ }
+
+ .about-rss {
+  color: #ec5242;
+  font-size: 3rem;
+  z-index: 7;
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-weight: 800;
+ }
+
+ .about-slogan {
+  margin: 0;
+  font-weight: 100;
+  color: #ec5242;
  }
  
  .mission {
@@ -641,17 +766,19 @@ display: none;
  }
  
  .school-dets {
-   background-color: #f7f7f8;
-   padding-top: 1rem;
-   margin-top: 0.5rem;
+   /* background-color: #f7f7f8; */
+   /* padding-top: 0.5rem; */
+   padding-bottom: 2rem;
+   /* margin-top: 0.5rem; */
+   margin-bottom: 2rem;
    position: relative;
  }
  
  .timetable {
-   font-weight: bold;
+   font-weight: 800;
    font-size: 2rem;
    margin-bottom: 0;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-family: 'Inter', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    z-index: 2;
  }
 
@@ -664,7 +791,7 @@ display: none;
    border-radius: 60%;
    position: absolute;
    right: 50px;
-   top: 410px;
+   top: 200px;
    z-index: 0;
  }
  
@@ -685,19 +812,19 @@ display: none;
  .school-values-title {
    align-self: center;
    font-size: 1.7rem;
-   padding-top: 2rem;
+   padding: 2rem 0 0 0;
  }
 
  .title-line {
   border-bottom: 1px solid rgb(239, 81, 60);
   width: 53px;
   height: 16px;
-  margin: 0px auto 54px;
+  margin: 0px auto 40px;
  }
 
  .school-features {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.2rem;
   width: 95%;
  }
  
@@ -711,6 +838,10 @@ display: none;
    padding: 5px;
    margin: 0 auto;
    background: rgba(255, 255, 255, 0.1);
+ }
+
+ .school-feature:hover {
+  border: 2px solid #FFF;
  }
  
  .feature-icon {
@@ -734,13 +865,20 @@ display: none;
  }
  
  .view-school-values {
-   align-self: flex-end;
-   margin-right: 2%;
-   margin-bottom: 3rem;
+   align-self: center;
+   margin: 3rem 2% 4rem 0;
+   text-decoration: underline;
+ }
+
+ .mob-only {
+  display: none;
  }
  
  #speakers {
    /* border: 3px solid salmon; */
+   width: 80%;
+   margin: auto;
+   padding-bottom: 5%;
    
  }
  
@@ -748,8 +886,6 @@ display: none;
  text-align: center;
  font-weight: 100;
  padding-top: 2rem;
-
- /* font-style: normal; */
  }
  
  .teachers {
@@ -764,8 +900,8 @@ display: none;
    /* border: 2px solid blue; */
    display: grid;
    grid-template-columns: 35% 65%;
-   grid-template-rows: 0.25fr 0.25fr 3fr;
-   grid-column-gap: 0.5rem;
+   grid-template-rows: 0.25fr 0.25fr 0.05fr 3fr;
+   grid-column-gap: 1rem;
    grid-row-gap: 0.5rem;
    margin: 5%;
  
@@ -773,7 +909,7 @@ display: none;
  
  .teacher-img-div {
    /* border: 2px solid green; */
-   grid-row: span 3;
+   grid-row: span 4;
    position: relative;
  
  }
@@ -792,25 +928,38 @@ display: none;
    position: absolute;
    top: 0;
    left: 0;
+   opacity: 20%;
  }
  
  .teacher-name {
    /* border: 2px solid green; */
    width: 90%;
-   font-size: 1.5rem;
+   font-size: 1rem;
+   font-weight: 800;
  }
  
  .teacher-prof {
    /* border: 2px solid green; */
    color: #ff4f38;
    width: 90%;
+  font-style: italic;
+  font-size: 0.8rem;
  }
  
+ .teacher-line {
+  width: 20px;
+  height: 0px;
+  border: 1px solid rgba(162, 161, 161, 0.603);
+  vertical-align: center;
+ }
+
  .teacher-desc {
    width: 90%;
+   font-size: 0.8rem;
  }
  
- .more-speakers {
+ .more-teachers{
+  display: none;
    text-align: end;
    grid-column: span 2;
    margin-right: 3%;
@@ -831,7 +980,7 @@ display: none;
  
  .about-royal {
  background-color: #FFF;
- width: 90%;
+ width: 60%;
  margin: auto;
  padding: 1rem;
  display: flex;
@@ -855,7 +1004,7 @@ display: none;
  }
  
  .small-note {
-   font-size: 0.7rem;
+   font-size: 0.8rem;
    margin: 2rem auto;
    width: 90%;
    padding-bottom: 3rem;
@@ -863,7 +1012,7 @@ display: none;
  
  .about-royal-logo {
    background-color: #fff;
-   padding-top: 2rem;
+   padding-top: 1rem;
    display: flex;
    flex-direction: column;
  }
@@ -877,17 +1026,19 @@ display: none;
  .royal-desc {
   width: 70%;
   align-self: center;
+  line-height: 1.6;
  }
 
  .logo-img  {
    height: 10rem;
    border: 1px solid rgba(128, 128, 128, 0.788);
+   margin-bottom: 2rem;
  }
 
  .royal-logo-desc {
   width: 70%;
   align-self: center;
-
+  line-height: 1.3;
  }
  
  .royal-logo-desc-2 {
@@ -900,22 +1051,23 @@ display: none;
  
  .past-term-highlights {
   background-color: #FFF;
+     border: 1px solid #d3d3d3;
+
  }
 
  .past-term-title {
   padding-top: 2rem;
  }
+
  .past-img {
    height: 15rem;
-   width: 90%;
+   width: 70%;
    display: flex;
    flex-direction: row;
    justify-content: center;
    gap: 0.5rem;
    margin: 3rem auto 7rem;
  }
- 
-
  
  .highlight-img:hover {
    filter: grayscale();
@@ -936,6 +1088,8 @@ display: none;
    background-size: cover;
    width: 50%;
    height: 100%;
+   font-weight: 800;
+
  }
  
  .highlight {
@@ -944,9 +1098,8 @@ display: none;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: rgba(229, 91, 49, 0.862);
-   background-blend-mode: multiply;
- 
+   background-color: #ec5342d6;
+   background-blend-mode: multiply; 
  }
  
  .highlight:hover {
@@ -958,33 +1111,75 @@ display: none;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid rgba(128, 128, 128, 0.319);
+  background-color: rgb(61, 61, 61);
+  filter: grayscale(100%);
  }
 
 
+ #about-partners {
+display: none;
+ }
+
+.partners-title {
+  color: rgba(128, 128, 128, 0.968);
+}
  .partners {
-  width: 20%;
+  width: 15%;
+  filter: grayscale(100%);
+  filter: invert(76%)
  }
 
  
  .partners-div {
   display: flex;
   justify-content: center;
-  padding-bottom: 5%;
+  padding:  0 10% 5%;
   border-bottom: 1px solid rgba(128, 128, 128, 0.319);
   gap: 2rem;
-
 }
 
 #footer {
+  background-color: #f8f8f8;  
+  padding: 5%;
+}
+
+#about-footer {
+background-color: #272a31;
+  padding: 5%;
+  color: #FFF;
+}
+
+#about-footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.foot {
   display: flex;
   flex-direction: row;
-  color: #FFF;
-  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   line-height: 1.6;
+  width: 80%;
+  margin: auto;
+  font-size: 0.7rem;
+}
+
+.about-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  line-height: 1.6;
+  width: 80%;
+  margin: auto;
+  font-size: 0.7rem;
 }
 
 #footer a {
-  color:#ff4f38;
+  /* color:#ff4f38; */
   text-decoration: none;
 }
 
@@ -996,7 +1191,9 @@ display: none;
 }
 
 .cc-icon1 {
-  width: 60%;
+  width: 20%;
+  height: 20%;
+  filter: invert(100%);
 }
 
 }

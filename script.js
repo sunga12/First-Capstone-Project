@@ -54,11 +54,27 @@ const line = document.createElement('div');
 line.className = 'title-line';
 mainSpeakers.appendChild(line);
 
+var medQuery = window.matchMedia("(max-width: 768px)");
+let teachers;
 
-const teachers = [
-  teacher1,
-  teacher2,
-  teacher3,
+if (medQuery.matches){
+  teachers = [
+    teacher1,
+    teacher2
+  ]
+} else {
+  teachers = [
+    teacher1,
+    teacher2,
+    teacher3,
+    teacher4,
+    teacher5,
+    teacher6,
+  ]
+}
+
+const restOfTeachers = [
+  teacher3, 
   teacher4,
   teacher5,
   teacher6
@@ -102,20 +118,91 @@ teacherProf.className = 'teacher-prof';
 teacherProf.innerHTML = teacher.profession;
 teacherDiv.appendChild(teacherProf);
 
+const smallLine = document.createElement('div');
+smallLine.className = 'teacher-line';
+teacherDiv.appendChild(smallLine);
+
 const teacherDesc = document.createElement('div');
 teacherDesc.className = 'teacher-desc';
 teacherDesc.innerHTML = teacher.description;
 teacherDiv.appendChild(teacherDesc);
-
 })
 
-const moreSpeakers = document.createElement('a');
-moreSpeakers.className = 'more-speakers';
-moreSpeakers.innerHTML = '<p>View More Speakers ><p>';
-teachersSection.appendChild(moreSpeakers);
+const moreTeachers = document.createElement('button');
+moreTeachers.className = 'more-teachers';
+moreTeachers.innerHTML = '<p>View More Teachers<p>';
+teachersSection.appendChild(moreTeachers);
+
+const lessTeachers = document.createElement('button');
+lessTeachers.className = 'more-teachers';
+lessTeachers.style.display = 'none';
+lessTeachers.innerHTML = '<p>View Less Teachers<p> <img src="./images/more-less-icon.png>';
+
+moreTeachers.addEventListener('click', ()=> {
+
+  teachersSection.removeChild(moreTeachers);
+
+
+  restOfTeachers.forEach((teacher) => { 
+
+    const teacherDiv = document.createElement('div');
+    teacherDiv.className = 'teacher rest-teacher';
+    teachersSection.appendChild(teacherDiv);
+    
+    const teacherFaceDiv = document.createElement('div');
+    teacherFaceDiv.className = 'teacher-img-div';
+    teacherDiv.appendChild(teacherFaceDiv);
+    
+    const chessboard = document.createElement('img');
+    chessboard.src = './images/chessboard.jpg'
+    chessboard.className = 'chessboard';
+    teacherFaceDiv.appendChild(chessboard);
+    
+    
+    const teacherFace = document.createElement('img');
+    teacherFace.src = teacher.image;
+    teacherFace.className = 'teacher-img';
+    teacherFaceDiv.appendChild(teacherFace);
+    
+    const teacherName = document.createElement('div');
+    teacherName.className = 'teacher-name';
+    teacherName.innerHTML = teacher.name;
+    teacherDiv.appendChild(teacherName);
+    
+    const teacherProf = document.createElement('div');
+    teacherProf.className = 'teacher-prof';
+    teacherProf.innerHTML = teacher.profession;
+    teacherDiv.appendChild(teacherProf);
+    
+    const smallLine = document.createElement('div');
+    smallLine.className = 'teacher-line';
+    teacherDiv.appendChild(smallLine);
+    
+    const teacherDesc = document.createElement('div');
+    teacherDesc.className = 'teacher-desc';
+    teacherDesc.innerHTML = teacher.description;
+    teacherDiv.appendChild(teacherDesc);
+
+    moreTeachers.style.display = 'none';
+    lessTeachers.style.display = 'block';
+    teachersSection.appendChild(lessTeachers);
+      
+    })
+})
+
+lessTeachers.addEventListener('click', () => {
+
+  var remover = document.querySelectorAll('.rest-teacher')
+  remover.forEach(function(remover) {
+    remover.remove();
+  })
+
+  moreTeachers.style.display = 'block';
+  lessTeachers.style.display = 'none';
+  teachersSection.appendChild(moreTeachers);
+})
 
 
 
-console.log('Great work, Keep Pushing!');
 
 
