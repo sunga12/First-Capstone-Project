@@ -83,7 +83,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://sunga12.github.io/First-Capstone-Project/)
 
 - [Video Presentation](https://drive.google.com/file/d/1Uyav1LQqFNOfFfvvkUoyvsribOEUNaao/view?usp=sharing)
 
