@@ -203,16 +203,11 @@
   }
 
   #features {
-    background-color: #272a31;
-
-    /* font-family: "Nanum Gothic"; */
     display: flex;
     flex-direction: column;
     color: #fff;
     margin: 0 auto;
-    background-image: url(./images/BG-design.png);
-    background-blend-mode: multiply;
-    background-size: 130px;
+    background-image: url(./images/repeat-bg.png);
   }
 
   .school-features {
@@ -775,14 +770,11 @@
   }
 
   #features {
-    background-color: rgb(29, 28, 28);
     display: flex;
     flex-direction: column;
     color: #fff;
     margin: 0 auto;
-    background-image: url(./images/BG-design.png);
-    background-blend-mode: multiply;
-    background-size: 130px;
+    background-image: url(./images/repeat-bg.png);
     align-items: center;
   }
 

@@ -166,10 +166,6 @@ You can deploy this project using:
 - Twitter: [@OfficialAseT](https://twitter.com/OfficialAseT)
 - LinkedIn: [Sungabanja Thawethe](https://www.linkedin.com/in/sungabanja-thawethe-b3419b142/)
 
-👤 **Author2**
-
-- Cindy Shin on Behance: (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -202,5 +198,7 @@ I would like to thank Microverse for this opportunity to become a software devel
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+Cindy Shin on Behance: (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
