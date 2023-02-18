@@ -119,7 +119,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone git@github.com:sunga12/Portfolio.git
+  git@github.com:sunga12/First-Capstone-Project.git
 ```
 
 ### Install
