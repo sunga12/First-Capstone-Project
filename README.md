@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <img src="./images/school-logo-small.png" alt="logo" width="140"  height="auto" />
+  <img src="./images/School-logo-small.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>CAPSTONE PROJECT 1</b></h3>
